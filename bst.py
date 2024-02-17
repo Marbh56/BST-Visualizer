@@ -65,5 +65,34 @@ def main():
                 return self.left.find(data)
             if data > self.data:
                 return self.right.find(data)
-            
-            
+# PostOrder the data
+        def postorder(self, visited):
+            if self.left is not None:
+              self.left.postorder(visited)
+            if self.right is not None:
+              self.right.postorder(visited)
+            if self.data is not None:
+                visited.appened(self.data)
+            return visited
+# InOrder the data
+        def inorder(self, visited):
+            if self.left is not None:
+                self.left.inorder(visited)
+            if self.data is not None:
+                visited.append(self.data)
+            if self.right is not None:
+                self.right.inorder(visited)
+            return visited
+#Find that data
+        def exist(self, data):
+            if self.data == data:
+                return True
+            if data < self.data:
+                if self.left is None:
+                    return False
+                return self.left.exist(data)
+            if data > self.data:
+                if self.right is None:
+                    return False
+                return self.right.exist(data)
+
