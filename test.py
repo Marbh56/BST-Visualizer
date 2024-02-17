@@ -4,6 +4,12 @@ gnome = BSTNode(10)
 print(gnome.data)    # Output: 10
 gnome.insert(56)
 gnome.insert(2)
+gnome.insert(5)
+gnome.insert(75)
+gnome.insert(65)
+gnome.insert(19)
+gnome.insert(564)
+gnome.insert(60)
 print(gnome.find(2))  # Output: True
 print(gnome.find(30)) # Output: False
 gnome.delete(2)
