@@ -5,6 +5,7 @@ print(gnome.data)    # Output: 10
 gnome.insert(56)
 gnome.insert(2)
 gnome.insert(5)
+gnome.insert(42)
 gnome.insert(75)
 gnome.insert(65)
 gnome.insert(19)
